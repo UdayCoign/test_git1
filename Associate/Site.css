@@ -1,0 +1,1139 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, 
+address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, 
+tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, 
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, 
+hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+{
+    display: block;
+}
+
+ul
+{
+    list-style-type: disc;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-left: 40px;
+}
+ol
+{
+    list-style-type: decimal;
+}
+
+i, cite, em, var, address, dfn
+{
+    font-style: italic;
+}
+
+b, strong
+{
+    font-weight: bold;
+}
+
+.notification {
+background-image: url(/Content/Images/alert.png);
+background-position: -1px -1px;
+background-repeat: no-repeat;
+color: #FFF;
+height: 23px;
+position: absolute;
+right: -6px;
+top: -8px;
+width: 23px;
+text-align: center;
+line-height: 23px;
+cursor: pointer;
+}
+
+blockquote, q
+{
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after
+{
+    content: '';
+    content: none;
+}
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    display: block;
+    font-weight: bold;
+}
+
+
+/*----------------------------------------------------------
+The base color for this template is #A0A0A0. If you'd like
+to use a different color start by replacing all instances of
+#A0A0A0 with your new color.
+----------------------------------------------------------*/
+body
+{
+    background-color: #A0A0A0;
+    font-size: 14px;
+    font-family: Calibri, "Trebuchet MS" , Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    color: #696969;
+    line-height: 1;
+    border: 0;
+    vertical-align: baseline;
+}
+
+.fixed-dialog
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+
+a { cursor: pointer; }
+
+a:link
+{
+    color: #034af3;
+    text-decoration: underline;
+}
+
+a:visited
+{
+    color: #505abc;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #12eb87;
+}
+
+p, ul
+{
+    /*margin-bottom: 20px;*/
+    line-height: 1.6em;
+    margin-top: 1em;
+}
+
+header, footer, nav, section
+{
+    display: block;
+}
+xml
+{
+    display: none;
+}
+/* HEADINGS   
+----------------------------------------------------------*/
+h1
+{
+    font-size: 2em;
+    margin-top: 0.67em;
+}
+
+
+h2
+{
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+}
+
+h3
+{
+    color: #a5bc29;
+    font-weight: normal;
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 5px;
+    border-bottom: 2px dotted rgb(147, 147, 147);
+}
+
+h3 a:link, h3 a:visited, h3 a:hover
+{
+    color: #a5bc29;
+    font-weight: normal;
+    font-size: 18px;
+    margin: 0;    
+}
+
+h4
+{
+    font-size: 16px;
+    color: #000;
+    margin: 1.33em 0;
+}
+
+h5
+{
+    font-size: 1em;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+}
+
+
+h6
+{
+    font-size: 0.83em;
+    margin-top: 2.33em;
+    margin-bottom: 2.33em;
+}
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+/* you can specify a greater or lesser percentage for the 
+page width. Or, you can specify an exact pixel width. */
+.page
+{
+    width: 994px;
+    padding: 10px 15px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.field-group
+{
+    background-color: rgb(245, 245, 245);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+header, #header
+{
+}
+
+header h1, #header h1
+{
+    font-weight: bold;
+    padding: 5px 0;
+    margin: 0;
+    color: #fff;
+    border: none;
+    line-height: 2em;
+    font-size: 32px !important;
+}
+
+#main
+{
+    padding: 15px 20px 15px 20px;
+    background-color: #fff;
+}
+
+#main > h2
+{
+    font-family: Verdana, Arial;
+    font-size: 18px;
+    font-weight: normal;
+    color: #a5bc29;
+    margin-top: 0px;
+    margin-bottom: 0.83em;
+}
+
+footer, #footer
+{
+    background-color: #666666;
+    color: #A0A0A0;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 9px;
+    text-decoration: none;
+    text-align: right;
+    padding: 10px 30px;
+    line-height: normal;
+    margin: 0 0 30px 0;
+    border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+}
+
+#footer a
+{
+    color: #A0A0A0;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+ul#menu
+{
+    border-bottom: 1px #A0A0A0 solid;
+    padding: 0 0 2px;
+    position: relative;
+    margin: 0;
+    text-align: right;
+}
+
+ul#menu li
+{
+    display: inline;
+    list-style: none;
+}
+
+ul#menu li#greeting
+{
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    color: #fff;
+}
+
+ul#menu li a
+{
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    background-color: #e8eef4;
+    color: #034af3;
+    border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+}
+
+ul#menu li a:hover
+{
+    background-color: #fff;
+    text-decoration: none;
+}
+
+ul#menu li a:active
+{
+    background-color: #a6e2a6;
+    text-decoration: none;
+}
+
+ul#menu li.selected a
+{
+    background-color: #fff;
+    color: #000;
+}
+
+/* FORM LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend
+{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea
+{
+    min-height: 75px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], .ko_editor
+{
+    border: 1px solid #ccc;
+    padding: 6px 4px;
+    color: #444;
+    width: 310px;
+    font-weight: bold;
+}
+
+input[type="text"].datefield, .ko_datepicker
+{
+    width: 120px;
+}
+
+select
+{
+    border: 1px solid #ccc;
+    padding: 6px 4px;
+    color: #444;
+    font-weight: bold;
+    width: 150px;
+}
+
+input[type="submit"]
+{
+    padding: 5px;
+}
+
+/* TABLE
+----------------------------------------------------------*/
+table
+{
+    border: solid 1px #aaaaaa;
+    border-collapse: collapse;
+}
+
+table td
+{
+    padding: 5px;
+    border: solid 1px #aaaaaa;
+}
+
+table th
+{
+    padding: 6px 5px;
+    text-align: left;
+    background-color: #e8eef4;
+    border: solid 1px #aaaaaa;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+.clear
+{
+    clear: both;
+}
+
+.error
+{
+    color: Red;
+}
+
+nav, #menucontainer
+{
+    margin-top: 40px;
+}
+
+div#title
+{
+    display: block;
+    text-align: left;
+}
+
+div#title > h1
+{
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-bottom: 3px;
+    background-color: #a5bc29;
+    font-weight: bold;
+    font-family: 'Arial Bold' ,Arial;
+    font-size: 14px !important;
+    text-transform: uppercase;
+}
+
+#logindisplay
+{
+    font-size: 0.9em;
+    display: block;
+    text-align: right;
+    margin: 15px;
+    color: White;
+}
+
+#logindisplay a:link
+{
+    color: white;
+    text-decoration: underline;
+}
+
+#logindisplay a:visited
+{
+    color: white;
+    text-decoration: underline;
+}
+
+#logindisplay a:hover
+{
+    color: white;
+    text-decoration: none;
+}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    /*border: 1px solid #ff0000 !important;*/
+    outline: 1px solid #ff0000 !important;    
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+.field-group .two-col-left
+{
+    float: left;
+    width: 48%;
+}
+
+.field-group .two-col-right
+{
+    float: right;
+    width: 48%;
+}
+
+.field-group .single-col
+{
+    clear: both;
+    width: 100%;
+}
+
+.field-group .intro-text
+{
+    margin-top: 18px;
+    color: #000;
+}
+
+
+.field-group .intro-text-larger
+{
+    font-size: 13px;
+    margin-top: 18px;
+    color: #000;
+}
+
+.field-group .intro-text-note
+{
+    color: #000;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.editor-label
+{
+    padding-top: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.editor-field
+{
+    margin-top: 4px;
+    font-weight: bold;
+}
+
+div.postCode input[type="text"]
+{
+    width: 100px;
+}
+
+.text-box
+{
+    width: 310px;
+}
+
+.text-box.multi-line
+{
+    height: 200px;
+}
+
+.tri-state
+{
+    width: 6em;
+}
+
+label[for="AddressData"].field-required-for-submit:after
+{
+    content: "";
+}
+#declaration.notSigned:after,
+.field-required-for-submit:after
+{
+    color: red;
+    content: " *";
+    font-size: 16px;
+}
+.field-required-for-submitnotification:after
+{
+    color: red;
+    background-image: url(/Content/Images/alert.png);
+    content: " 1";
+    margin-right:-100px;
+    text-align:center;
+    padding-right:15px;
+    padding-left:5px;
+    padding-top:3px;
+    padding-bottom:20px;
+    color: #FFF;
+    background-repeat:no-repeat;
+    font-size: 14px;
+}
+.field-required-for-submitsign:after
+{
+    color: red;
+    background-image: url(/Content/Images/alert.png);
+    content: " 1";
+    margin-right:-100px;
+    text-align:center;
+    padding-right:15px;
+    padding-left:8px;
+    padding-top:3px;
+    padding-bottom:20px;
+    color: #FFF;
+    background-repeat:no-repeat;
+    font-size: 14px;
+}
+
+
+.field-required-for-save:after
+{
+    color: red;
+    content: " *";
+    font-size: 16px;
+}
+
+.field-required:after
+{
+    color: red;
+    content: "*";
+}
+.field-required2:after
+{
+    font-style: italic;
+    font-weight: bold;
+    color: red;
+    content: " (Required)";
+}
+.field-required3
+{
+    border-color: #666666;
+    border-style: dashed;
+    width: 220px;
+    padding: 5px;
+}
+.field-required3 label
+{
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.submit-button
+{
+    background-image: url(/Content/images/btn-rectangle.png);
+    color: #fff;
+    font-size: 12px;
+    border: none;
+    width: 144px;
+    height: 24px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.noTitleStuff .ui-dialog-titlebar
+{
+    display: none;
+}
+
+.indeterminate {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+#passwordStrength
+{
+    height: 14px;
+    display: block;
+    float: left;
+    padding: 6px;
+    border: #000000 solid 1px;
+    margin: 3px 2px 2px 20px;
+    width: 250px;
+    font-weight: bold;
+    color: black;
+}
+
+#passwordStrength.strength0
+{
+    display: none;
+}
+
+.strength1
+{
+    background: #cccccc;
+}
+
+.strength2
+{
+    background: #ff5f5f;
+}
+
+.strength3
+{
+    background: rgb(238, 188, 188);
+}
+
+.strength4
+{
+    background: #56e500;
+}
+
+.strength5
+{
+    background: #4dcd00;
+}
+
+.strength6
+{
+    background: #399800;
+}
+
+/* Address look up */
+.ui-dialog .ui-dialog-content
+{
+    padding-top: 0px;
+}
+
+.alert {
+    width: 400px;
+    height: 240px;
+    line-height: 1.5em;
+}
+
+.alert .btn-dialog {
+    width: 400px;
+    margin-top: 10px;
+    clear: left;
+}
+
+div.AddressLookupDialog a
+{
+    color: #505abc;
+    cursor: pointer;
+}
+div.AddressLookupDialog
+{
+    line-height: 25px;
+    height: 30px;
+    padding: 10px;
+    z-index: 1;
+}
+#AddressLookupDialog ul
+{
+    margin: 0px;
+    padding: 0px;
+}
+#AddressLookupDialog ul li
+{
+    cursor: pointer;
+    list-style-type: none;
+}
+#AddressLookupDialog ul li:hover
+{
+    color: #a5bc29;
+}
+
+#lookupAddress input[readonly] {
+background-color: #eee;
+}
+
+.ui-datepicker-trigger {
+height: 17px;
+width: 17px;
+}
+
+#recaptcha_privacy {
+    display: none;
+}
+
+ #editTimesheet tr {
+    line-height: 102px;
+}
+
+
+.retainer-container{background-color: rgb(245, 245, 245) !important; padding: 20px; margin-bottom: 8px;}
+.retainer-container table{ background-color: rgb(245, 245, 245) !important}
+.retainer-container table th  
+{
+   background-color: rgb(234, 234, 234) !important;
+   height: 40px !important;
+   font-weight: bold;
+   padding: 10px;
+   
+}
+.retainer-container h4
+{
+    font-weight: normal;
+    font-size : 15px;
+    margin: 0;
+    padding: 5px;
+}
+
+.retainer-container div.associate { margin-left: 5px; }
+.retainer-container #rCommentArea { width: 320px !important; margin-right: 30px !important;  float: right;margin-top: -135px;margin-right: 1px !important};
+.retainer-container #rCommentArea textarea {width: 320px !important; background-color:Red;}
+.retainer-container #rHistory, .retainer-container #rHistory h3 { width: 500px !important; }
+.retainer-container h3 { margin-bottom: 8px; }
+.retainer-container .col1{}
+/* Time Sheets */
+
+#timesheetHeader {
+    margin-bottom: 16px;
+}
+
+.timesheet-container h3 { margin-bottom: 8px; }
+
+.timesheet-container h4 {    
+    font-weight: normal;
+    font-size: 15px;
+    margin: 0;
+    padding-bottom: 5px;    
+}
+
+.timesheet-container table th {
+    height: 30px !important;
+    padding: 5px !important;
+    color: rgb(34, 34, 34);
+    background-color: rgb(234, 234, 234) !important;
+    overflow: hidden;
+    font-weight: bold;    
+}
+
+.timesheet-container table {
+    border-top: rgb(170, 170, 170) !important;    
+}
+
+.timesheet-container tr.clear td {
+    border-left: none;
+    border-right: none;
+    height: 20px;
+}
+
+.timesheet-container .col1 { width: 80px; }
+.timesheet-container .col2 { width: 100px; }
+.timesheet-container .col3 { width: 70px; } /*white-space: nowrap; }*/
+.timesheet-container .col4 { width: 48px; }
+.timesheet-container .col5 { width: 66px; }
+.timesheet-container .col6 { width: 66px; }
+.timesheet-container .col7 { width: 80px; }
+.timesheet-container .col8 { width: 50px; }
+.timesheet-container .col9 { width: 64px; }
+.timesheet-container .col10 { width: 64px; }
+.timesheet-container .col11 { width: 54px; }
+.timesheet-container .col12 { width: 64px; }
+.timesheet-container .col13 { width: 64px; }
+
+.timesheet-container div.pull-right { margin-left: 8px;}
+.timesheet-container div.pull-left  { margin-right: 8px;}
+
+.timesheet-container #newComment, .timesheet-container #newComment h3  { width: 320px !important; margin-right: 30px !important; }
+.timesheet-container #historyTable, .timesheet-container #historyTable h3 { width: 500px !important; }
+
+.timesheet-container .buttons-container { margin-top: 12px; }
+
+a.uploadLinkCV { white-space: nowrap; }
+
+.buttons-container .col-md-8 { width: 100%; margin-bottom: -50px; }
+
+.highlight{ border-color: #FF0000; } /* box-shadow: 0 0 10px #FF0000; } */
+
+#timesheetExpenseReciepts .two-col-right { float: left; }
+#timesheetExpenseReciepts .two-col-left { width: 190px; }
+#timesheetExpenseReciepts button { margin-top: 20px; margin-bottom: 20px; margin-left: 242px; }
+.links { text-decoration:none !important; border-bottom:none !important}
+.linksBtn { text-decoration:none !important}
+
+#toolTip 
+{
+    position: absolute; 
+    display: none; 
+    border: solid 1px #666; 
+    background-color: #fff; 
+    padding: 8px;
+    color: rgb(34, 34, 34) !important;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+}
+.retainerlinks { float: right; margin:0px; padding-right: 0px; text-decoration:none}
+    .retainerlinks a {text-decoration: none;color:black}
+    .retainerlinks a link{color:black}
+
+.k-grid-edit .k-icon,
+#InvoicesGride.k-grid tbody .k-grid-edit .k-icon,
+#InvoicesGrid.k-grid tbody .k-grid-edit .k-icon 
+#currentAbsencesGrid.k-grid tbody .k-grid-edit .k-icon,
+#olderAbsencesGrid.k-grid tbody .k-grid-edit .k-icon 
+{
+    display: none;
+}
+
+.k-hierarchy-col,
+#InvoicesGrid .k-hierarchy-col,
+#InvoicesGrid .k-hierarchy-col,
+#InvoicesGrid .k-hierarchy-cell,
+#InvoicesGrid .k-hierarchy-cell {
+    display: none;
+}
+
+#InvoicesGrid .k-grid-Expand,
+#InvoicesGrid .k-grid-Details,
+#associateInvoices .k-grid-Details,
+#InvoicesGrid .k-grid-ViewInvoice,
+#associateInvoices .k-grid-ViewInvoice,
+
+#InvoicesGrid .k-grid tbody .k-button, 
+#InvoicesGrid .k-ie8 .k-grid tbody button.k-button {
+    width: 16px !important; 
+    min-width: 16px !important;
+    height: 16px !important; 
+    cursor: pointer;
+    border: none !important;
+}
+
+#InvoicesGrid .k-grid-Expand { background-image: url(/Content/images/down.jpg); }
+#InvoicesGrid .k-grid-Details { background-image: url(/Content/images/eye.png); }
+#onlineLibraryGrid .k-grid-Details { background-image: url(/Content/images/eye.png); }
+#InvoicesGrid .k-grid-ViewInvoice { background-image: url(/Content/images/icon-pen.gif); }
+#associateInvoices .k-grid-ViewInvoice { background-image: url(/Content/images/icon-pen.gif); }
+#associateInvoices .k-grid-Details { background-image: url(/Content/images/eye.png); }
+
+#currentAbsencesGrid .k-grid-View,
+#absenceRequests .k-grid-View,
+#absenceRequests .k-grid-Acknowledge,
+#currentAbsencesGrid .k-grid-Edit,
+#currentAbsencesGrid .k-grid-Archive,
+#currentAbsencesGrid .k-grid tbody .k-button, 
+#currentAbsencesGrid .k-ie8 .k-grid tbody button.k-button,
+#olderAbsencesGrid .k-grid-View,
+#olderAbsencesGrid .k-grid tbody .k-button, 
+#olderAbsencesGrid .k-ie8 .k-grid tbody button.k-button 
+{
+    width: 16px !important; 
+    min-width: 16px !important;
+    height: 16px !important; 
+    cursor: pointer;
+    border: none !important;
+}
+
+#olderAbsencesGrid .k-grid-View, #currentAbsencesGrid .k-grid-View { background-image: url(/Content/images/eye.png); }
+#currentAbsencesGrid .k-grid-Edit { background-image: url(/Content/images/icon-pen.gif); }
+#currentAbsencesGrid .k-grid-Archive { background-image: url(/Content/images/bin.png); }
+#absenceRequests .k-grid-View { background-image: url(/Content/images/eye.png); }
+#absenceRequests .k-grid-Acknowledge { background-image: url(/Content/images/tick.gif); }
+
+.timesheet-receipt{width:200px; float:right}
+.timesheet-receipt .panel-body{padding-top: 0px;}
+.validationElement { border-color: #FF0000 !important;}  
+
+.ui-widget { font-family: Calibri, 'Trebuchet MS', Verdana, Helvetica, sans-serif; font-size: 11px/*{fsDefault}*/; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Calibri, 'Trebuchet MS', Verdana, Helvetica, sans-serif; font-size: 1em; }
+
+/* Corner radius */
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl { -moz-border-radius-topleft: 4px/*{cornerRadius}*/; -webkit-border-top-left-radius: 4px/*{cornerRadius}*/; -khtml-border-top-left-radius: 4px/*{cornerRadius}*/; border-top-left-radius: 4px/*{cornerRadius}*/; }
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr { -moz-border-radius-topright: 4px/*{cornerRadius}*/; -webkit-border-top-right-radius: 4px/*{cornerRadius}*/; -khtml-border-top-right-radius: 4px/*{cornerRadius}*/; border-top-right-radius: 4px/*{cornerRadius}*/; }
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl  
+{
+    -moz-border-radius-bottomleft: 0/*{cornerRadius}*/; 
+    -webkit-border-bottom-left-radius: 0/*{cornerRadius}*/; 
+    -khtml-border-bottom-left-radius: 0/*{cornerRadius}*/; 
+    border-bottom-left-radius: 0/*{cornerRadius}*/; 
+}
+    
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br  
+{
+    -moz-border-radius-bottomright: 0/*{cornerRadius}*/; 
+    -webkit-border-bottom-right-radius: 0/*{cornerRadius}*/; 
+    -khtml-border-bottom-right-radius: 0/*{cornerRadius}*/; 
+    border-bottom-right-radius: 0/*{cornerRadius}*/; 
+}
+
+.ui-tabs .ui-tabs-panel {
+display: block;
+border: 1px solid #aaa;
+padding: 5px 6px;
+background: none;
+}
+
+.ui-widget {
+    font-size: 12px;
+}
+
+.k-weekend {
+    background-color: rgb(245, 245, 245);        
+}
+
+.generate-timesheet-invoice-report{ display: none;}
+.deleteBin
+{ cursor: pointer;}
+
+@media print {
+ 
+    header {display:none;}
+    footer {display:none;}
+    button {display:none;}
+    h2, h3 {display:none;}
+    div#tabs ul.ui-tabs-nav {display:none;}
+    div#InvoiceFilesGrid {display:none;}
+    div#InvoiceHistoryGrid {display:none;}
+
+    div.invoice-report-number-header {
+        color: #a5bc29;
+        font-weight: normal;
+        font-size: 18px;
+        margin: 0;
+        padding-bottom: 5px;
+        border-bottom: 2px dotted rgb(147, 147, 147);
+    }    
+}
+.highlight-red {
+    color: #FF3300 !important
+}
+
+div.associate-absence-checkboxes {
+    margin: 10px 0 8px 0;
+    color: #212121;
+    font-size: 14px;
+}
+
+div.associate-absence-checkboxes input {
+    margin-top: 2px;
+}
+
+.notification-warning {
+background: #fa8100;
+display: block;
+position: relative;
+padding: 5px;
+    margin: 10px 0 5px -5px;
+color: #ffffff;
+border-radius: 4px;
+width: 100%;
+height: 40px;
+    cursor: default;
+}
+
+    .notification-warning div.explanation-mark {
+          background-image: url(/Content/images/ex-mark.png);         
+        float: left;
+        height: 34px;
+        width: 34px;
+    }
+
+
+
+.notification span {
+position: absolute;
+top: 0;
+right: 0;
+height: 100%;
+font-size: 20px;
+padding: 0 16px;
+line-height: 48px;
+border-left: 1px solid rgba(255, 255, 255, 0.1);
+box-shadow: -1px 0 0 0 rgba(0, 0, 0, 0.1);
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+ cursor: pointer;
+}
+
+.notification p {
+    font-size: 16px;
+display: block;
+-webkit-margin-before: 0em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+
+#approver-timesheetDetail, #approver-adjustTimesheetDetail {
+    display: none;
+}
+.timesheet-adjustment
+{background-color: #FFD6AE }
+
+/* STYLES FOR BROWSER-UPDATE NOTIFICATION BAR */
+body .buorg {
+    position:absolute;
+    width:100%;
+    top:0px;
+    left:0px;
+    border-bottom:1px solid #ed8618;
+    background: #fa8100 no-repeat 1em 0.55em;
+    text-align:center;
+    cursor:pointer;
+    font-family: Arial,Helvetica,sans-serif; 
+    color:#fff;
+        font-weight: bold;
+    font-size: 14px;
+}
+body .buorg div {
+    padding: 15px 0;
+}
+body .buorg a {
+    color:#E25600;
+}
+body #buorgclose {
+    position: absolute;
+    right: 20px;
+    top: 13px;
+    height: 20px;
+    width: 20px;
+    font-weight: bold;
+    font-size:14px;
+    padding:0;
+    }
+
+div.wrapper {
+    width: 650px; 
+    padding-bottom:10px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+div.inline {
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+}v.wrapper {
+    width: 650px; 
+    overflow: hidden;
+    white-space: nowrap;
+}
+ 
+div.inline {
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+}
